@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <h1 class="text-2xl">Bonjour monde !</h1>
+  <RouterLink to="">item 1</RouterLink>
 </template>
