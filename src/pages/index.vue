@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <RouterLink to="">item 1</RouterLink>
+  <RouterLink to="/accordeon">Accordéon</RouterLink>
+  <RouterLink to="/boucle">boucle sur des données</RouterLink>
+  <RouterLink to="/bonus">Si vous avez fini</RouterLink>
 </template>
