@@ -24,7 +24,7 @@ onErrorCaptured((err, instance, info) => {
     <!-- nav#mainNav>ul>li*3>a[href="#"]{item $} -->
     <Transition class="transition-transform duration-1000" enter-from-class="-translate-x-full"
       enter-to-class="translate-x-0" leave-active-class="-translate-x-full">
-      <nav id="mainNav" v-show="menuIsOpen">
+      <nav id="mainNav" v-show="menuIsOpen" class="text-slate-50">
         <ul>
           <li>
             <RouterLink to="/accordeon">Accordéon</RouterLink>
@@ -39,7 +39,7 @@ onErrorCaptured((err, instance, info) => {
       </nav>
     </Transition>
   </header>
-  <RouterView class="bg-slate-900 h-screen" v-slot="{ Component }">
+  <RouterView class="bg-slate-900 h-screen text-slate-50" v-slot=" { Component }">
     <Suspense>
       <component :is="Component" />
     </Suspense>
