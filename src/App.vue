@@ -25,15 +25,12 @@ onErrorCaptured((err, instance, info) => {
     <Transition class="transition-transform duration-1000" enter-from-class="-translate-x-full"
       enter-to-class="translate-x-0" leave-active-class="-translate-x-full">
       <nav id="mainNav" v-show="menuIsOpen" class="text-slate-50">
-        <ul>
+        <ul class="flex">
           <li>
             <RouterLink to="/accordeon">Accordéon</RouterLink>
           </li>
           <li>
             <RouterLink to="/boucle">boucle sur des données</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/bonus">Si vous avez fini</RouterLink>
           </li>
         </ul>
       </nav>
