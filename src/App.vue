@@ -37,7 +37,7 @@ onErrorCaptured((err, instance, info) => {
       </ul>
     </nav>
   </Transition>
-  <RouterView class="pt-16" v-slot=" { Component }">
+  <RouterView v-slot=" { Component }">
     <Suspense>
       <component :is="Component" />
     </Suspense>
