@@ -1,4 +1,6 @@
 <script setup lang="ts">
+    import { ref } from 'vue'
+    const textOpen = ref(1)
     const sectionsData = [
 {
     label: 'bouton 1',
@@ -26,7 +28,10 @@
 }
 ]
 </script>
-
 <template>
-    oui
+    <section v-for="({ label, texte }, key) of sectionsData" :key="key">
+        <pre @pointerdown="textOpen = key" class="font-mono">key : {{ key }}</pre>
+        <pre v-show="textOpen == key" class="font-mono">label : {{ label }}</pre>
+        <pre v-show="textOpen == key" class="font-mono">texte : {{ texte }}</pre>
+    </section>
 </template>
