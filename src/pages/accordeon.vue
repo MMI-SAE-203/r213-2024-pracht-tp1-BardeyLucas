@@ -5,7 +5,7 @@ const sectionOpen = ref(1)
 </script>
 
 <template>
-    <main class="pt-16 text-2xl bg-slate-800 h-screen text-slate-50">
+    <main class="pt-16 px-5 bg-slate-800 h-screen text-slate-50">
         <section>
             <button class="text-xl" @pointerdown="sectionOpen = 1">bouton 1</button>
             <p v-show="sectionOpen == 1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt
