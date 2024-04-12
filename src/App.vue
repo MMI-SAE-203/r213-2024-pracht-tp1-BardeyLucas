@@ -27,9 +27,15 @@ onErrorCaptured((err, instance, info) => {
     enter-to-class="translate-x-0" leave-active-class="-translate-x-full">
     <nav id="mainNav" v-show="menuIsOpen">
       <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
+        <li>
+          <RouterLink to="/accordeon">Accordéon</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/boucle">boucle sur des données</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/bonus">Si vous avez fini</RouterLink>
+        </li>
       </ul>
     </nav>
   </Transition>
