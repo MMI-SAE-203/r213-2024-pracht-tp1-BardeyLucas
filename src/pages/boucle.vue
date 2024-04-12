@@ -29,9 +29,11 @@
 ]
 </script>
 <template>
-    <section v-for="({ label, texte }, key) of sectionsData" :key="key">
-        <pre @pointerdown="textOpen = key" class="font-mono">key : {{ key }}</pre>
-        <pre v-show="textOpen == key" class="font-mono">label : {{ label }}</pre>
-        <pre v-show="textOpen == key" class="font-mono">texte : {{ texte }}</pre>
-    </section>
+    <main class="pt-16 text-2xl bg-slate-800 h-screen text-slate-50">
+        <section v-for="({ label, texte }, key) of sectionsData" :key="key">
+            <pre @pointerdown="textOpen = key" class="font-mono">key : {{ key }}</pre>
+            <pre v-show="textOpen == key" class="font-mono">label : {{ label }}</pre>
+            <pre v-show="textOpen == key" class="font-mono">texte : {{ texte }}</pre>
+        </section>
+    </main>
 </template>
